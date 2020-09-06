@@ -9,7 +9,7 @@ function App() {
   const [number, setNumber] = React.useState("");
 
   const handleChange = (tagNum: number) => {
-    setNumber(randomNumberGenerator(0, tagNum).toString());
+    setNumber(randomNumberGenerator(1, tagNum).toString());
   };
 
   return (
