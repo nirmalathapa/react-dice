@@ -8,16 +8,19 @@ function randomNumberGenerator(min: number, max: number): number {
 function App() {
   const [number, setNumber] = React.useState("");
 
-  const handleChange = () => {
-    const randValue = randomNumberGenerator(0, 20);
-    setNumber(randValue.toString());
+  const handleChange = (tagNum: number) => {
+    setNumber(randomNumberGenerator(0, tagNum).toString());
   };
 
   return (
     <div className="App">
       <header className="App-header">
         <p data-testid="displayD20">{number}</p>
-        <button onClick={handleChange}>Roll D20</button>
+        <button onClick={() => handleChange(20)}>Roll D20</button>
+        <button onClick={() => handleChange(12)}>Roll D12</button>
+        <button onClick={() => handleChange(10)}>Roll D10</button>
+        <button onClick={() => handleChange(6)}>Roll D6</button>
+        <button onClick={() => handleChange(4)}>Roll D4</button>
       </header>
     </div>
   );
