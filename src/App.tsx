@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p data-testid="displayD20">{number}</p>
+        <p data-testid="displayNumber">{number}</p>
         <button onClick={() => handleChange(20)}>Roll D20</button>
         <button onClick={() => handleChange(12)}>Roll D12</button>
         <button onClick={() => handleChange(10)}>Roll D10</button>
