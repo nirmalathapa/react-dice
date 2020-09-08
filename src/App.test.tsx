@@ -62,3 +62,9 @@ test("Renders D4 die", () => {
   expect(getByTestId("displayNumber")).not.toHaveTextContent("6");
   expect(getByTestId("displayNumber")).toHaveTextContent("4");
 });
+
+test("Renders select option for each individual die", () => {
+  const { getByText } = render(<App />);
+  const selectElement = getByText(/Select a die to roll/i);
+  expect(selectElement).toBeInTheDocument();
+});
