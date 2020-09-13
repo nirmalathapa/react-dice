@@ -13,7 +13,10 @@ function App() {
     setNumber(randomNumberGenerator(1, tagNum).toString());
   };
 
-  const handleSingeDieChange = () => setDie(dieValue);
+  const handleSingeDieChange = (e: any) => {
+    console.log();
+    setDie(e.currentTarget.value);
+  };
 
   return (
     <div className="App">
@@ -31,7 +34,7 @@ function App() {
           <option value="d6">D6</option>
           <option value="d10">D10</option>
           <option value="d12">D12</option>
-          <option value="d12">D20</option>
+          <option value="d20">D20</option>
         </select>
 
         <button onClick={() => handleChange(20)}>Roll D20</button>
