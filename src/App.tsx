@@ -11,6 +11,7 @@ function App() {
 
   const handleChange = (e: any, tagNum: number) => {
     e.preventDefault();
+    if (!tagNum) return;
     setNumber(randomNumberGenerator(1, tagNum).toString());
   };
 
