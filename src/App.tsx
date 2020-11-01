@@ -6,7 +6,7 @@ function randomNumberGenerator(min: number, max: number): number {
 }
 
 function App() {
-  const [number, setNumber] = React.useState("");
+  const [number, setNumber] = React.useState("0");
   const [dieValue, setDie] = React.useState("");
 
   const handleChange = (e: any, tagNum: number) => {
@@ -22,7 +22,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p data-testid="displayNumber">{number}</p>
+        <h3>Dungeons & Dragons Dice Roller</h3>
+        <h3 data-testid="displayNumber">{number}</h3>
         <form onSubmit={(e) => handleChange(e, Number(dieValue))}>
           <select
             name="dice"
