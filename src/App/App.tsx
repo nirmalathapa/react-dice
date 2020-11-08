@@ -25,7 +25,7 @@ function App() {
           <h1 className="font-mono text-3xl">Dungeons & Dragons Dice Roller</h1>
         </header>
         <div className="text-gray-700 bg-gray-200 text-center px-4 py-2 m-2">
-          <h2 data-testid="displayNumber" className="text-2l">
+          <h2 data-testid="displayNumber" className="text-3xl">
             {number}
           </h2>
         </div>
