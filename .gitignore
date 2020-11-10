@@ -27,3 +27,4 @@ src/tailwind.output.css
 
 # Ignore create react app generated empty files
 src/react-app-env.d.ts
+
