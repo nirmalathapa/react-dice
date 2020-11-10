@@ -16,7 +16,7 @@ function DiceRoll() {
   };
 
   return (
-    <main className="flex flex-col justify-center bg-gray-200 h-24 space-y-6 h-screen">
+    <main className="flex flex-col justify-center bg-gray-200 space-y-6 h-screen">
       <header className="flex justify-center bg-gray-200 p-4">
         <h1 className="font-mono text-3xl">Dungeons & Dragons Dice Roller</h1>
       </header>
