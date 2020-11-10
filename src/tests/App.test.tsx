@@ -1,6 +1,5 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import App from "../App/App";
 
 beforeEach(() => {
@@ -13,64 +12,4 @@ afterEach(() => {
 
 test("Dungeons & Dragons Dice Roller", () => {
   render(<App />);
-
-  /*   
-  const { getByText, getByTestId } = ;
-  const buttonElement = getByText("/Roll a Die/i");
-  expect(buttonElement).toBeInTheDocument();
-  expect(getByTestId("displayNumber")).toHaveTextContent("");
-  userEvent.click(buttonElement);
-  expect(getByTestId("displayNumber")).toHaveTextContent("18");
- */
 });
-
-/*
-test("Renders D12 die", () => {
-  const { getByText, getByTestId } = render(<App />);
-  const buttonElement = getByText(/Roll D12/i);
-  expect(buttonElement).toBeInTheDocument();
-  expect(getByTestId("displayNumber")).toHaveTextContent("");
-  userEvent.click(buttonElement);
-  expect(getByTestId("displayNumber")).not.toHaveTextContent("18");
-  expect(getByTestId("displayNumber")).toHaveTextContent("11");
-});
-
-test("Renders D10 die", () => {
-  const { getByText, getByTestId } = render(<App />);
-  const buttonElement = getByText(/Roll D10/i);
-  expect(buttonElement).toBeInTheDocument();
-  expect(getByTestId("displayNumber")).toHaveTextContent("");
-  userEvent.click(buttonElement);
-  expect(getByTestId("displayNumber")).not.toHaveTextContent("18");
-  expect(getByTestId("displayNumber")).toHaveTextContent("9");
-});
-
-test("Renders D6 die", () => {
-  const { getByText, getByTestId } = render(<App />);
-  const buttonElement = getByText(/Roll D6/i);
-  expect(buttonElement).toBeInTheDocument();
-  expect(getByTestId("displayNumber")).toHaveTextContent("");
-  userEvent.click(buttonElement);
-  expect(getByTestId("displayNumber")).not.toHaveTextContent("18");
-  expect(getByTestId("displayNumber")).not.toHaveTextContent("9");
-  expect(getByTestId("displayNumber")).toHaveTextContent("6");
-});
-
-test("Renders D4 die", () => {
-  const { getByText, getByTestId } = render(<App />);
-  const buttonElement = getByText(/Roll D4/i);
-  expect(buttonElement).toBeInTheDocument();
-  expect(getByTestId("displayNumber")).toHaveTextContent("");
-  userEvent.click(buttonElement);
-  expect(getByTestId("displayNumber")).not.toHaveTextContent("18");
-  expect(getByTestId("displayNumber")).not.toHaveTextContent("9");
-  expect(getByTestId("displayNumber")).not.toHaveTextContent("6");
-  expect(getByTestId("displayNumber")).toHaveTextContent("4");
-});
-
-test("Renders select option for each individual die", () => {
-  const { getByText } = render(<App />);
-  const selectElement = getByText(/Select a die to roll/i);
-  expect(selectElement).toBeInTheDocument();
-});
- */
