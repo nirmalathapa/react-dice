@@ -1,15 +1,15 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { cleanup, render } from "@testing-library/react";
 import App from "../App/App";
 
-beforeEach(() => {
-  jest.spyOn(global.Math, "random").mockReturnValue(0.893456789);
+afterEach(cleanup);
+
+test("Title text", () => {
+  const { getByText } = render(<App />);
+  expect(getByText("Dungeons & Dragons Dice Roller")).toBeInTheDocument();
 });
 
-afterEach(() => {
-  jest.spyOn(global.Math, "random").mockRestore();
-});
-
-test("Dungeons & Dragons Dice Roller", () => {
-  render(<App />);
+test("Button text", () => {
+  const { getByText, asFragment } = render(<App />);
+  expect(getByText("Roll a Die")).toBeInTheDocument();
 });

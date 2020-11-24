@@ -1,3 +1,7 @@
-export const randomNumberGenerator = (min: number, max: number): number => {
+interface RandomFunc {
+  (min: number, max: number): number;
+}
+
+export const randomNumberGenerator = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };

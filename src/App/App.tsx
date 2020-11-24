@@ -4,7 +4,7 @@ import DiceRoll from "../components/DiceRoll";
 import Inventory from "../components/Inventory";
 import Navbar from "../components/Navigation";
 
-function App() {
+function App(): any {
   return (
     <Router>
       <div className="flex flex-col bg-gray-200 h-screen">
