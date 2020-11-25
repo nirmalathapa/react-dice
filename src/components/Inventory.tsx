@@ -1,6 +1,6 @@
 import React from "react";
 
-function Inventory() {
+function Inventory(): JSX.Element {
   return (
     <div className="container mx-auto py-20">
       <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
