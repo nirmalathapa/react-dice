@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(): JSX.Element {
   return (
     <nav className="bg-gray-800">
       <div className="flex-1 flex flex-row-reverse items-center justify-center sm:items-stretch sm:justify-start px-8 py-4">
